@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Text Stream | 文字だけライブ配信</title>
+  <meta name="description" content="声も顔もいらない。文章だけで今を流して、あとからログとして残せる文字ライブ配信サイト。" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="page-bg"></div>
+
+  <header class="site-header">
+    <a href="#" class="logo">
+      <span class="logo-mark">✦</span>
+      <span>Text Stream</span>
+    </a>
+
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#live">Live</a>
+      <a href="#logs">Logs</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">TEXT ONLY LIVE STREAM</p>
+
+        <h1>
+          声も顔もいらない。<br>
+          文字だけで、今を配信する。
+        </h1>
+
+        <p class="lead">
+          作業中のひとりごと、創作の実況、キャラ語り、イベントの進行ログ。
+          思いついた文章をその場で流して、あとから公開ログとして残せます。
+        </p>
+
+        <div class="hero-actions">
+          <a href="#start" class="btn primary">配信をはじめる</a>
+          <a href="#logs" class="btn ghost">公開ログを見る</a>
+        </div>
+
+        <div class="hero-tags">
+          <span>創作実況</span>
+          <span>作業ログ</span>
+          <span>雑談</span>
+          <span>イベント記録</span>
+        </div>
+      </div>
+
+      <div class="live-panel" id="live">
+        <div class="panel-top">
+          <div>
+            <p class="status">
+              <span class="live-dot"></span>
+              LIVE NOW
+            </p>
+            <h2>深夜の創作会議</h2>
+          </div>
+          <span class="viewer-count">18 watching</span>
+        </div>
+
+        <div class="stream-box">
+          <article class="stream-message active">
+            <span class="time">23:41</span>
+            <p>今からキャラの関係性を詰める。たぶん一番楽しいところ。</p>
+          </article>
+
+          <article class="stream-message">
+            <span class="time">23:44</span>
+            <p>主人公は明るいけど、実は一番過去を引きずってるタイプにしたい。</p>
+          </article>
+
+          <article class="stream-message">
+            <span class="time">23:48</span>
+            <p>相棒はツッコミ役。だけど、いざという時は主人公より危ない。</p>
+          </article>
+
+          <article class="stream-message">
+            <span class="time">23:52</span>
+            <p>ここ、あとで短編にできそう。ログ残して正解かもしれん。</p>
+          </article>
+        </div>
+
+        <form class="fake-form" id="start">
+          <input type="text" value="次の文章を入力…" readonly />
+          <button type="button">送信</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-title">
+        <p class="eyebrow">ABOUT</p>
+        <h2>投稿じゃなくて、配信。<br>でも終わったらログになる。</h2>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span class="num">01</span>
+          <h3>その場で流せる</h3>
+          <p>
+            思いついた文章をリアルタイムに追加。
+            タイムラインみたいに、今の流れを見せられます。
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <span class="num">02</span>
+          <h3>あとから読める</h3>
+          <p>
+            配信が終わったあとも、公開ログとして保存。
+            創作メモや作業記録にも使えます。
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <span class="num">03</span>
+          <h3>声出し不要</h3>
+          <p>
+            顔も声もいらないから、気軽に始められる。
+            文章だけで空気感を作れる場所です。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section">
+      <div class="section-title">
+        <p class="eyebrow">SCENE</p>
+        <h2>こんな時に使える</h2>
+      </div>
+
+      <div class="scene-list">
+        <div class="scene-item">
+          <h3>創作ライブ</h3>
+          <p>キャラ設定、世界観、短編、プロット作りをリアルタイムで公開。</p>
+        </div>
+
+        <div class="scene-item">
+          <h3>作業実況</h3>
+          <p>サイト制作、絵、ゲーム制作、進捗報告をその場で流す。</p>
+        </div>
+
+        <div class="scene-item">
+          <h3>イベントログ</h3>
+          <p>企画、絵チャ、ゲーム会、配布イベントの進行記録に。</p>
+        </div>
+
+        <div class="scene-item">
+          <h3>ひとりごと配信</h3>
+          <p>誰かに話したいけど、音声配信までは重い時に。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="logs">
+      <div class="section-title row-title">
+        <div>
+          <p class="eyebrow">PUBLIC LOGS</p>
+          <h2>公開ログ</h2>
+        </div>
+        <a href="#" class="small-link">すべて見る</a>
+      </div>
+
+      <div class="log-grid">
+        <article class="log-card">
+          <p class="log-label">CREATIVE</p>
+          <h3>オリキャラ関係性会議</h3>
+          <p>キャラ同士の距離感、過去設定、短編ネタをその場でまとめたログ。</p>
+          <div class="log-meta">
+            <span>36 posts</span>
+            <span>2026.06.15</span>
+          </div>
+        </article>
+
+        <article class="log-card">
+          <p class="log-label">WORK</p>
+          <h3>サイト制作の進捗実況</h3>
+          <p>トップページの構成、CSS調整、ボタン配置を作りながら記録。</p>
+          <div class="log-meta">
+            <span>22 posts</span>
+            <span>2026.06.15</span>
+          </div>
+        </article>
+
+        <article class="log-card">
+          <p class="log-label">TALK</p>
+          <h3>深夜の雑談ストリーム</h3>
+          <p>思いついたことを流しながら、あとで読み返せる形にした雑談ログ。</p>
+          <div class="log-meta">
+            <span>48 posts</span>
+            <span>2026.06.15</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Text Stream</p>
+    <small>文字だけで、今を配信する。</small>
+  </footer>
+</body>
+</html>
