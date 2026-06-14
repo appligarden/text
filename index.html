@@ -3,20 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Text Stream | 文字だけライブ配信</title>
-  <meta name="description" content="声も顔もいらない。文章だけで今を流して、あとからログとして残せる文字ライブ配信サイト。" />
-
+  <title>Text Live | 文字だけライブ配信</title>
+  <meta
+    name="description"
+    content="声も顔もいらない。キャラクターと一緒に文字だけで配信できる、かわいいライブサイト。"
+  />
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <div class="page-bg"></div>
+  <div class="bg-deco deco-1"></div>
+  <div class="bg-deco deco-2"></div>
+  <div class="bg-deco deco-3"></div>
 
   <header class="site-header">
     <a href="#" class="logo">
-      <span class="logo-mark">✦</span>
-      <span>Text Stream</span>
+      <span class="logo-icon">✦</span>
+      <span class="logo-text">Text Live</span>
     </a>
 
     <nav class="nav">
@@ -29,151 +31,165 @@
   <main>
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">TEXT ONLY LIVE STREAM</p>
+        <p class="eyebrow">CHARACTER TEXT STREAM</p>
 
         <h1>
-          声も顔もいらない。<br>
-          文字だけで、今を配信する。
+          かわいく配信。<br />
+          文字だけで、今を流す。
         </h1>
 
         <p class="lead">
-          作業中のひとりごと、創作の実況、キャラ語り、イベントの進行ログ。
-          思いついた文章をその場で流して、あとから公開ログとして残せます。
+          声も顔もいらない。<br />
+          キャラクターの立ち絵と一緒に、雑談・創作・作業実況をその場で配信。
+          終わったあとは公開ログとして残せます。
         </p>
 
         <div class="hero-actions">
-          <a href="#start" class="btn primary">配信をはじめる</a>
-          <a href="#logs" class="btn ghost">公開ログを見る</a>
+          <a href="#live" class="btn primary">配信をはじめる</a>
+          <a href="#logs" class="btn secondary">公開ログを見る</a>
         </div>
 
-        <div class="hero-tags">
+        <div class="tag-list">
           <span>創作実況</span>
-          <span>作業ログ</span>
           <span>雑談</span>
-          <span>イベント記録</span>
+          <span>キャラ配信</span>
+          <span>作業ログ</span>
         </div>
       </div>
 
-      <div class="live-panel" id="live">
-        <div class="panel-top">
-          <div>
-            <p class="status">
-              <span class="live-dot"></span>
-              LIVE NOW
-            </p>
-            <h2>深夜の創作会議</h2>
-          </div>
-          <span class="viewer-count">18 watching</span>
+      <div class="character-stage">
+        <div class="live-badge">
+          <span class="dot"></span>
+          LIVE
         </div>
 
-        <div class="stream-box">
-          <article class="stream-message active">
-            <span class="time">23:41</span>
-            <p>今からキャラの関係性を詰める。たぶん一番楽しいところ。</p>
-          </article>
+        <span class="sparkle one">✦</span>
+        <span class="sparkle two">✧</span>
+        <span class="sparkle three">✦</span>
 
-          <article class="stream-message">
-            <span class="time">23:44</span>
-            <p>主人公は明るいけど、実は一番過去を引きずってるタイプにしたい。</p>
-          </article>
+        <img
+          src="assets/characters/main.png"
+          alt="配信キャラクター"
+          class="hero-character"
+        />
 
-          <article class="stream-message">
-            <span class="time">23:48</span>
-            <p>相棒はツッコミ役。だけど、いざという時は主人公より危ない。</p>
-          </article>
-
-          <article class="stream-message">
-            <span class="time">23:52</span>
-            <p>ここ、あとで短編にできそう。ログ残して正解かもしれん。</p>
-          </article>
+        <div class="speech-bubble">
+          <p>今日は創作の話、いっぱいしよ？</p>
         </div>
-
-        <form class="fake-form" id="start">
-          <input type="text" value="次の文章を入力…" readonly />
-          <button type="button">送信</button>
-        </form>
       </div>
     </section>
 
     <section class="section" id="about">
       <div class="section-title">
         <p class="eyebrow">ABOUT</p>
-        <h2>投稿じゃなくて、配信。<br>でも終わったらログになる。</h2>
+        <h2>投稿じゃなくて、配信。<br />でもちゃんと残せる。</h2>
       </div>
 
       <div class="feature-grid">
-        <div class="feature-card">
-          <span class="num">01</span>
-          <h3>その場で流せる</h3>
+        <article class="feature-card">
+          <span class="feature-no">01</span>
+          <h3>リアルタイムで流せる</h3>
           <p>
-            思いついた文章をリアルタイムに追加。
-            タイムラインみたいに、今の流れを見せられます。
+            思いついた文章をその場で追加。
+            いま話している感じを、そのまま見せられます。
           </p>
-        </div>
+        </article>
 
-        <div class="feature-card">
-          <span class="num">02</span>
-          <h3>あとから読める</h3>
+        <article class="feature-card">
+          <span class="feature-no">02</span>
+          <h3>キャラ立ち絵が使える</h3>
           <p>
-            配信が終わったあとも、公開ログとして保存。
-            創作メモや作業記録にも使えます。
+            オリキャラや看板キャラを横に立たせて、
+            アニメっぽい雰囲気で配信できます。
           </p>
-        </div>
+        </article>
 
-        <div class="feature-card">
-          <span class="num">03</span>
-          <h3>声出し不要</h3>
+        <article class="feature-card">
+          <span class="feature-no">03</span>
+          <h3>ログとして残せる</h3>
           <p>
-            顔も声もいらないから、気軽に始められる。
-            文章だけで空気感を作れる場所です。
+            配信後はそのまま公開ログ化。
+            創作記録やイベントログとしてあとから読めます。
           </p>
-        </div>
+        </article>
       </div>
     </section>
 
-    <section class="section dark-section">
+    <section class="section live-section" id="live">
       <div class="section-title">
-        <p class="eyebrow">SCENE</p>
-        <h2>こんな時に使える</h2>
+        <p class="eyebrow">LIVE SAMPLE</p>
+        <h2>こんな感じで流れる</h2>
       </div>
 
-      <div class="scene-list">
-        <div class="scene-item">
-          <h3>創作ライブ</h3>
-          <p>キャラ設定、世界観、短編、プロット作りをリアルタイムで公開。</p>
+      <div class="live-layout">
+        <div class="mini-character-card">
+          <img
+            src="assets/characters/main.png"
+            alt="配信キャラクター"
+            class="mini-character"
+          />
+          <div class="mini-character-info">
+            <strong>るな</strong>
+            <span>配信中のキャラクター</span>
+          </div>
         </div>
 
-        <div class="scene-item">
-          <h3>作業実況</h3>
-          <p>サイト制作、絵、ゲーム制作、進捗報告をその場で流す。</p>
-        </div>
+        <div class="stream-panel">
+          <div class="stream-header">
+            <div>
+              <p class="stream-status">ON AIR</p>
+              <h3>深夜の創作配信</h3>
+            </div>
+            <span class="viewer">12 watching</span>
+          </div>
 
-        <div class="scene-item">
-          <h3>イベントログ</h3>
-          <p>企画、絵チャ、ゲーム会、配布イベントの進行記録に。</p>
-        </div>
+          <div class="message-list">
+            <article class="message-card">
+              <span class="time">23:41</span>
+              <p>今日は新キャラの設定を決める配信です！</p>
+            </article>
 
-        <div class="scene-item">
-          <h3>ひとりごと配信</h3>
-          <p>誰かに話したいけど、音声配信までは重い時に。</p>
+            <article class="message-card">
+              <span class="time">23:43</span>
+              <p>元気そうに見えるけど、ちょっと影がある子にしたいかも。</p>
+            </article>
+
+            <article class="message-card">
+              <span class="time">23:46</span>
+              <p>相棒キャラはクール系。たまに甘いこと言うタイプ。</p>
+            </article>
+
+            <article class="message-card active">
+              <span class="time">23:49</span>
+              <p>この流れ、あとでそのままログに残せるの結構いい。</p>
+            </article>
+          </div>
+
+          <div class="fake-input">
+            <input type="text" value="次の文章を入力…" readonly />
+            <button type="button">送信</button>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section" id="logs">
-      <div class="section-title row-title">
+      <div class="section-title row">
         <div>
           <p class="eyebrow">PUBLIC LOGS</p>
           <h2>公開ログ</h2>
         </div>
-        <a href="#" class="small-link">すべて見る</a>
+        <a href="#" class="more-link">すべて見る</a>
       </div>
 
       <div class="log-grid">
         <article class="log-card">
-          <p class="log-label">CREATIVE</p>
-          <h3>オリキャラ関係性会議</h3>
-          <p>キャラ同士の距離感、過去設定、短編ネタをその場でまとめたログ。</p>
+          <span class="log-type">CREATIVE</span>
+          <h3>オリキャラ雑談ライブ</h3>
+          <p>
+            キャラの性格や関係性を語りながら、
+            その場で流した文章をまとめたログ。
+          </p>
           <div class="log-meta">
             <span>36 posts</span>
             <span>2026.06.15</span>
@@ -181,9 +197,12 @@
         </article>
 
         <article class="log-card">
-          <p class="log-label">WORK</p>
-          <h3>サイト制作の進捗実況</h3>
-          <p>トップページの構成、CSS調整、ボタン配置を作りながら記録。</p>
+          <span class="log-type">WORK</span>
+          <h3>サイト制作実況</h3>
+          <p>
+            トップページ作成、デザイン調整、
+            ボタン配置などの進捗を残したログ。
+          </p>
           <div class="log-meta">
             <span>22 posts</span>
             <span>2026.06.15</span>
@@ -191,9 +210,12 @@
         </article>
 
         <article class="log-card">
-          <p class="log-label">TALK</p>
-          <h3>深夜の雑談ストリーム</h3>
-          <p>思いついたことを流しながら、あとで読み返せる形にした雑談ログ。</p>
+          <span class="log-type">TALK</span>
+          <h3>夜ふかしひとりごと</h3>
+          <p>
+            思いついたことをゆるく流しながら、
+            あとで読み返せる形にしたテキスト配信ログ。
+          </p>
           <div class="log-meta">
             <span>48 posts</span>
             <span>2026.06.15</span>
@@ -204,8 +226,8 @@
   </main>
 
   <footer class="footer">
-    <p>Text Stream</p>
-    <small>文字だけで、今を配信する。</small>
+    <p>Text Live</p>
+    <small>キャラクターと文字で配信する。</small>
   </footer>
 </body>
 </html>
